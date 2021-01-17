@@ -1,0 +1,17 @@
+2021-01-15 8:57:05 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'admin'@'localhost' (using password: YES) in /var/www/new/system/library/db/mysqli.php on line 7
+2021-01-15 8:57:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/new/system/library/db/mysqli.php on line 10
+2021-01-15 8:57:05 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/new/system/library/db/mysqli.php on line 10
+2021-01-15 8:57:05 - PHP Notice:  Undefined variable: mysql in /var/www/new/install/controller/install/step_3.php on line 281
+2021-01-15 8:57:05 - PHP Notice:  Trying to get property 'connect_error' of non-object in /var/www/new/install/controller/install/step_3.php on line 281
+2021-01-15 9:01:24 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'admin1'@'localhost' (using password: YES) in /var/www/new/system/library/db/mysqli.php on line 7
+2021-01-15 9:01:24 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/new/system/library/db/mysqli.php on line 10
+2021-01-15 9:01:24 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/new/system/library/db/mysqli.php on line 10
+2021-01-15 9:01:24 - PHP Notice:  Undefined variable: mysql in /var/www/new/install/controller/install/step_3.php on line 281
+2021-01-15 9:01:24 - PHP Notice:  Trying to get property 'connect_error' of non-object in /var/www/new/install/controller/install/step_3.php on line 281
+2021-01-15 9:01:56 - PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'admin1'@'localhost' (using password: YES) in /var/www/new/system/library/db/mysqli.php on line 7
+2021-01-15 9:01:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/new/system/library/db/mysqli.php on line 10
+2021-01-15 9:01:56 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /var/www/new/system/library/db/mysqli.php on line 10
+2021-01-15 9:01:56 - PHP Notice:  Undefined variable: mysql in /var/www/new/install/controller/install/step_3.php on line 281
+2021-01-15 9:01:56 - PHP Notice:  Trying to get property 'connect_error' of non-object in /var/www/new/install/controller/install/step_3.php on line 281
+2021-01-15 9:46:15 - PHP Notice:  Trying to access array offset on value of type null in /var/www/new/admin/controller/marketplace/marketplace.php on line 1011
+2021-01-15 9:46:15 - PHP Notice:  Trying to access array offset on value of type null in /var/www/new/admin/controller/marketplace/marketplace.php on line 1013
