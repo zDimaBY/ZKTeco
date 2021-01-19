@@ -1,16 +1,70 @@
-/* russo-one-regular - latin_cyrillic */
+/* Код для подключения шрифта в /css/stylename.css */
+
+/* font-family: "MyriadProBold"; */
 @font-face {
-    font-family: 'Russo One';
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
     font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/russo-one-v9-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('../fonts/russo-one-v9-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/russo-one-v9-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/russo-one-v9-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/russo-one-v9-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/russo-one-v9-latin_cyrillic-regular.svg#RussoOne') format('svg'); /* Legacy iOS */
-  }
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+    font-family: "MyriadProBoldItalic";
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProItalic"; */
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+    font-family: "MyriadProSemiBoldItalic";
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
   
 html {
     box-sizing: border-box;
@@ -20,12 +74,14 @@ html {
 }
 
 body{
-    font-family: 'Russo One';
+    font-family: 'MyriadProRegular';
+    font-size: 18px;
     font-style: normal;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: normal;
-    color: white;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 .wrapper{
     width: 1440px; 
@@ -47,19 +103,16 @@ body{
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: 16px;
+    padding-top: 5px;
 }
 .header__menu-ico{
     position:relative;
     top: -14px;
     padding-left: 40px;
 }
-.header__logo-pic1{
+.header__logo-pic{
     padding-left: 49px;
-}
-.header__logo-pic2{
-    position:relative;
-    left:-15px;
+    top: 14px;
 }
 .header__nav{
     position:relative;
@@ -70,6 +123,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    padding-left: 0px;
 }
 .header__item{
     margin-right: 32px;
@@ -84,4 +138,20 @@ body{
 }
 .header__link:hover, .header__link:focus, .header__link:active{
     opacity: 0.50;
+}
+.header__Search-pic{
+    position:relative;
+    top: -50px;
+    left: 170px;
+}
+.header__Rectangle-pic{
+    position:relative;
+    top: -63px;
+    left: 140px;
+}
+.header__contact{
+    position:relative;
+    top: -73px;
+    left: -297px;
+    color: white;
 }
