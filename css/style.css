@@ -29,12 +29,14 @@ body{
 }
 .wrapper{
     width: 1440px; 
+    height: 72px;
     padding: 10px; 
     margin: auto; 
     background: #21232E;
 }
 .header{
     position: fixed;
+    height: 72px;
     top: 0;
     left: 0;
     width: 100%;

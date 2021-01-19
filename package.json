@@ -1,0 +1,25 @@
+{
+  "name": "zkteco",
+  "version": "1.0.0",
+  "description": "sborkaGulp",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zDimaBY/zkteco.git"
+  },
+  "author": "zkteco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zDimaBY/zkteco/issues"
+  },
+  "homepage": "https://github.com/zDimaBY/zkteco#readme"
+}
