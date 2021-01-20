@@ -4,7 +4,8 @@
   "description": "sborkaGulp",
   "main": "index.html",
   "dependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13"
@@ -14,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zDimaBY/zkteco.git"
+    "url": "git+https://github.com/zDimaBY/zDimaBY.github.io"
   },
   "author": "zkteco",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zDimaBY/zkteco/issues"
+    "url": "https://github.com/zDimaBY/zDimaBY.github.io/issues"
   },
-  "homepage": "https://github.com/zDimaBY/zkteco#readme"
+  "homepage": "https://github.com/zDimaBY/zDimaBY.github.io#readme"
 }

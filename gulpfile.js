@@ -1,5 +1,5 @@
 let project_folder="dist";
-let source_folders="src";
+let source_folders="app";
 
 let path={
   build:{
@@ -9,7 +9,7 @@ let path={
     img: project_folder+"/img/",
     fonts: project_folder+"/fonts/",
   },
-  src:{
+  app:{
     html: source_folders+"/*.html",
     css: source_folders+"/css/style.css",
     js: source_folders+"/js/script.js",
@@ -39,7 +39,7 @@ function browserSync(params){
 }
 
 function html(){
-  return src(path.src.html)
+  return src(path.app.html)
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream())
 }
