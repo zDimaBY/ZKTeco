@@ -177,6 +177,147 @@ body {
   margin: 0px 0px 14px 0px;
 }
 
-.imgBackBaner-ico {
-  margin: 64px 0px 0px 196px;
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.imgBackBanner-ico {
+  margin-top: 64px;
+}
+
+.RectangleBack {
+  display: flex;
+  justify-content: center;
+  margin-top: -283px;
+  mix-blend-mode: overlay;
+}
+
+.RectangleBack2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -276px;
+  mix-blend-mode: overlay;
+  margin-left: 308px;
+}
+
+.ProFaceX {
+  display: flex;
+  justify-content: center;
+  margin: -518px 0px 0px 0px;
+  color: white;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 67px;
+  text-shadow: 0px 4px 52px #202433;
+}
+
+.ProFaceXPhon {
+  display: flex;
+  justify-content: center;
+  margin-top: -11px;
+}
+
+.Vector1 {
+  display: flex;
+  justify-content: center;
+  margin: -114px 125px 0px 0px;
+}
+
+.Vector2 {
+  display: flex;
+  justify-content: center;
+  margin: -0px 125px 0px 0px;
+}
+
+.Vector3 {
+  display: flex;
+  justify-content: center;
+  margin: -92px -155px 0 0;
+}
+
+.Vector4 {
+  display: flex;
+  justify-content: center;
+  margin: 13px -153px 0 0;
+}
+
+.Vector5 {
+  display: flex;
+  justify-content: center;
+  margin: 27px -150px 0 0;
+}
+
+.typography {
+  color: white;
+}
+
+.text1 {
+  display: flex;
+  justify-content: center;
+  margin: -207px 700px 0 0;
+}
+
+.p1text1 {
+  text-align: right;
+  max-width: 320px;
+}
+
+.text2 {
+  display: flex;
+  justify-content: center;
+  margin: 100px 700px 0 0;
+}
+
+.p1text2 {
+  text-align: right;
+  max-width: 320px;
+}
+
+.text3 {
+  display: flex;
+  justify-content: center;
+  margin: -235px -750px 0 0;
+}
+
+.p1text3 {
+  max-width: 369px;
+}
+
+.text4 {
+  display: flex;
+  justify-content: center;
+  margin: 70px -800px 0 0;
+}
+
+.p1text4 {
+  max-width: 316px;
+}
+
+.text5 {
+  display: flex;
+  justify-content: center;
+  margin: 70px -600px 0 0;
+}
+
+.p1text5 {
+  max-width: 316px;
+}
+
+.buttonleft {
+  display: flex;
+  justify-content: center;
+  margin: -174px 1315px 0 0;
+}
+
+.buttonrigth {
+  display: flex;
+  justify-content: center;
+  margin: -55px -1307px 0 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 160px -0px 0 0;
 }
