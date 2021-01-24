@@ -321,3 +321,64 @@ body {
   justify-content: center;
   margin: 160px -0px 0 0;
 }
+
+.main {
+  background-color: white;
+  max-block-size: 1440px;
+}
+
+.frame49 {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 0 0;
+}
+
+.rectangle {
+  width: 240px;
+  height: 241px;
+  border: 1px solid #E5E6E7;
+}
+
+.rectangletext {
+  padding: 0px 0px 0px 28px;
+}
+
+.textpopylarh2 {
+  text-align: center;
+}
+
+.textpopylarp {
+  text-align: center;
+}
+
+.flexpopylar {
+  display: flex;
+  justify-content: center;
+}
+
+.popylarimageon {
+  background-color: #F3F4F2;
+}
+
+.contenerpop {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 347px;
+  height: 461;
+  border: 1px solid #E5E6E7;
+}
+
+.P {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.H2 {
+  font-family: MyriadProBold;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 32px;
+}
