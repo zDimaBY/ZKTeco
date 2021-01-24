@@ -131,7 +131,7 @@ body {
 }
 
 .headerList {
-  margin: 0px 76px 8px 0px;
+  margin: 0px 70px 8px 0px;
 }
 
 .header__item {
@@ -381,4 +381,110 @@ body {
   font-style: normal;
   font-size: 32px;
   line-height: 32px;
+}
+
+.discount {
+  margin-top: 71px;
+}
+
+.productcatalog {
+  margin: 40px 0px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.flexconteiner,
+.upblock2 {
+  display: flex;
+  justify-content: center;
+}
+
+.upblock1 {
+  display: flex;
+  justify-content: center;
+  background-color: #E5E6E7;
+  margin: 0px 30px 0px 0px;
+}
+
+.upblock2 {
+  border: 2px solid #78BC27;
+}
+
+.ptext1 {
+  width: 341px;
+}
+
+.ptext2 {
+  width: 220px;
+}
+
+.block1,
+.block2 {
+  margin: 0px 0px 0px 62px;
+}
+
+.blocklatintext {
+  width: 1440px;
+  height: 328px;
+  background-color: #F3F4F2;
+  display: block;
+  margin: auto;
+  margin-top: 72px;
+}
+
+.latintext {
+  padding-top: 64px;
+  text-align: center;
+  width: 899px;
+  display: block;
+  margin: auto;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.h2latintext {
+  color: #9EA1A7;
+}
+
+.platintext {
+  color: #9EA1A7;
+}
+
+.blockfooter {
+  width: 1440px;
+  height: 368px;
+  background-color: #333640;
+  display: block;
+  margin: auto;
+  margin-top: 374px;
+}
+
+.flexblock {
+  color: white;
+  display: flex;
+  padding-top: 48px;
+  margin-left: 39px;
+}
+
+.footertext {
+  width: 202px;
+  color: #E5E6E7;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footorblock2 {
+  padding-left: 146px;
+}
+
+.footorblock3 {
+  padding-left: 141px;
+}
+
+.footorblock4 {
+  padding-left: 92px;
+}
+
+.footorblock5 {
+  padding-left: 62px;
 }
