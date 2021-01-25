@@ -424,12 +424,13 @@ body{
 }
 .flexdownfooter{
     display: flex;
-    margin-top: 38px;
+    margin-top: 24px;
     border-top: 1px solid #5F626B;
     width: 1440px;
     height: 55px;
 }
-.downfooter{
+.bxl-facebook{
+    margin-right: 20px;
 }
 .textdownfooter{
     font-size: 14px;
