@@ -1,0 +1,452 @@
+/* Код для подключения шрифта в /css/stylename.css */
+
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+    font-family: "MyriadProBoldItalic";
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProItalic"; */
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+    font-family: "MyriadProSemiBoldItalic";
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+  
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'MyriadProRegular';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.wrapper{
+    width: 1440px; 
+    height: 72px;
+    margin: auto; 
+    background: #21232E;
+}
+.header{
+    position: fixed;
+    height: 72px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.wrapper__header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    top: -10px;
+    position: relative;
+}
+
+.header__link{
+    font-size: 18px;
+    line-height: 2px;
+    color: white;
+    text-decoration: none;
+    list-style-type: square;
+    
+}
+.header__nav{
+    display: flex;
+    align-items: flex-end;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    line-height: 180%;
+}
+.headerList{
+    margin: 0px 70px 8px 0px;
+}
+.header__item{
+    margin-right: 32px;
+}
+.header__item:last-child {
+    margin-right: 0px;
+}
+
+.header__link:hover, .header__link:active{
+    opacity: 0.50;
+}
+.header_logo{
+    margin: 0px 0px 12px 0px;
+}
+.header__menu-ico{
+    margin: 0px 49px 12px 40px;
+}
+.Search{
+    margin: 10px 26px 0px 0px;
+}
+.nomber{
+    margin: 0px 22px 30px 0px;
+    color:white;
+    font-family: 'MyriadProBold';
+}
+.CallBack{
+    margin: 0px 0px 14px 0px;
+}
+.ButtonPackage{
+    margin: 0 16px 14px 21px;
+}
+.ButtonBay{
+    margin: 0px 0px 14px 0px;
+}
+.banner{
+    display: flex;
+    justify-content: center
+}
+.imgBackBanner-ico{
+    margin-top: 64px;
+}
+.RectangleBack{
+    display: flex;
+    justify-content: center;
+    margin-top: -283px;
+    mix-blend-mode: overlay;
+}
+.RectangleBack2{
+    display: flex;
+    justify-content: center;
+    margin-top: -276px;
+    mix-blend-mode: overlay;
+    margin-left: 308px;
+}
+.ProFaceX{
+    display: flex;
+    justify-content: center;
+    margin: -518px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 67px;
+    text-shadow: 0px 4px 52px #202433;
+}
+.ProFaceXPhon{
+    display: flex;
+    justify-content: center;
+    margin-top: -11px;
+}
+.Vector1{
+    display: flex;
+    justify-content: center;
+    margin: -114px 125px 0px 0px
+}
+.Vector2{
+    display: flex;
+    justify-content: center;
+    margin: -0px 125px 0px 0px
+}
+.Vector3{
+    display: flex;
+    justify-content: center;
+    margin: -92px -155px 0 0
+}
+.Vector4{
+    display: flex;
+    justify-content: center;
+    margin: 13px -153px 0 0
+}
+.Vector5{
+    display: flex;
+    justify-content: center;
+    margin: 27px -150px 0 0
+}
+.typography{
+    color: white;
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    margin: -207px 700px 0 0
+    
+}
+.p1text1{
+    text-align: right;
+    max-width: 320px;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    margin: 100px 700px 0 0
+}
+.p1text2{
+    text-align: right;
+    max-width: 320px;
+}
+.text3{
+    display: flex;
+    justify-content: center;
+    margin: -235px -750px 0 0
+}
+.p1text3{
+    max-width: 369px;
+}
+.text4{
+    display: flex;
+    justify-content: center;
+    margin: 70px -800px 0 0
+}
+.p1text4{
+    max-width: 316px;
+}
+.text5{
+    display: flex;
+    justify-content: center;
+    margin: 70px -600px 0 0
+}
+.p1text5{
+    max-width: 316px;
+}
+.buttonleft{
+    display: flex;
+    justify-content: center;
+    margin: -174px 1315px 0 0
+}
+.buttonrigth{
+    display: flex;
+    justify-content: center;
+    margin: -55px -1307px 0 0
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 160px -0px 0 0
+}
+.main{
+    background-color: white;
+    max-block-size: 1440px;
+}
+.frame49{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 0 0;
+}
+.rectangle{
+    width: 240px;
+    height: 241px;
+    border: 1px solid #E5E6E7;
+
+}
+.rectangletext{
+    padding: 0px 0px 0px 28px;
+}
+.textpopylarh2{
+    text-align: center;
+
+}
+.textpopylarp{
+    text-align: center;
+}
+.flexpopylar{
+    display: flex;
+    justify-content: center;
+}
+.popylarimageon{
+    background-color: #F3F4F2;
+}
+.contenerpop{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 347px;
+    height: 461;
+    border: 1px solid #E5E6E7;
+}
+.P{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+.H2{
+    font-family: MyriadProBold;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 32px;
+}
+.discount{
+    margin-top: 71px;
+}
+.productcatalog{
+    margin: 40px 0px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.flexconteiner, .upblock2{
+    display: flex;
+    justify-content: center;
+}
+.upblock1{
+    display: flex;
+    justify-content: center;
+    background-color: #E5E6E7;
+    margin: 0px 30px 0px 0px;
+}
+.upblock2{
+    border: 2px solid #78BC27;
+}
+.ptext1{
+    width: 341px;
+}
+.ptext2{
+    width: 220px;
+}
+.block1, .block2{
+    margin: 0px 0px 0px 62px;
+}
+.blocklatintext{
+    width: 1440px;
+    height: 328px;
+    background-color: #F3F4F2;
+    display: block;
+    margin: auto;
+    margin-top: 72px;
+}
+.latintext{
+    padding-top: 64px;
+    text-align: center;
+    width: 899px;
+    display: block;
+    margin: auto;
+    font-size: 14px;
+    line-height: 18px;
+}
+.h2latintext{
+    color: #9EA1A7;
+}
+.platintext{
+    color: #9EA1A7;
+}
+.blockfooter{
+    width: 1440px;
+    height: 368px;
+    background-color: #333640;
+    display: block;
+    margin: auto;
+    margin-top: 374px;
+}
+.flexblock{
+    color: white;
+    display: flex;
+    padding-top: 48px;
+    margin-left: 39px;
+}
+.footertext{
+    width: 202px;
+    color: #E5E6E7;
+    font-size: 14px;
+    line-height: 18px;
+}
+.footorblock2{
+    padding-left: 146px;
+}
+.footorblock3{
+    padding-left: 141px;
+}
+.footorblock4{
+    padding-left: 92px;
+}
+.footorblock5{
+    padding-left: 62px;
+}
+.flexdownfooter{
+    display: flex;
+    margin-top: 38px;
+    border-top: 1px solid #5F626B;
+    width: 1440px;
+    height: 55px;
+}
+.downfooter{
+}
+.textdownfooter{
+    font-size: 14px;
+    line-height: 18px;
+    color: #9EA1A7;
+    padding-left: 32px;
+    margin-top: 18px;
+}
+.footerpayment{
+    padding-left: 127px;
+    margin-top: 12px;
+}
+.logocompanies{
+    padding-left: 233px;
+    margin-top: 12px;
+}
+.footersupport{
+    padding-left: 200px;
+    margin-top: 5px;
+}
