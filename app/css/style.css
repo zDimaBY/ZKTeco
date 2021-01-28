@@ -119,7 +119,7 @@ body{
 	margin: 0 auto;
 }
 
-#slides article{ /*все изображения справа друг от доруга*/
+#slides .imgBanner{ /*все изображения справа друг от доруга*/
 	width: 20%;
 	float: left;
 }
@@ -135,7 +135,7 @@ body{
 }
 
 
-article img{ /*размер изображений слайдера*/
+.imgBanner img{ /*размер изображений слайдера*/
     width: 100%;
     object-fit: cover;
 }

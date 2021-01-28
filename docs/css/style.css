@@ -142,7 +142,7 @@ body {
   margin: 0 auto;
 }
 
-#slides article {
+#slides .imgBanner {
   /*все изображения справа друг от доруга*/
   width: 20%;
   float: left;
@@ -160,7 +160,7 @@ body {
   overflow: hidden;
 }
 
-article img {
+.imgBanner img {
   /*размер изображений слайдера*/
   width: 100%;
   -o-object-fit: cover;
