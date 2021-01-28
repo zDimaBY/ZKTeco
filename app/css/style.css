@@ -263,12 +263,21 @@ label, a{ /*при наведении на стрелки или переклю�
     justify-content: center;
 }
 .button{
-    display: flex;
-    justify-content: center;
-    margin: 0px 0px 0 0
+    color:white;
+    font-family: 'MyriadProRegular';
+    font-size: 16px;
+    text-decoration: none;
+    padding-top: 20px;
+    line-height: 50px;
+}
+.button_conteiner{
+    border-radius: 80px;
+    background: #78bc27;
+    width: 166px;
+    height: 48px;
+    margin: auto;
 }
 .main{
-    background-color: white;
     margin: 0;
     padding: 0;
 }
