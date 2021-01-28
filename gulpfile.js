@@ -13,7 +13,7 @@ let path={
   },
   app:{
     html: [source_folder+"/*.html","!"+source_folder+"/_*.html"],
-    css: source_folder+"/css/style.css",
+    css: source_folder+"/css/*.css",
     js: source_folder+"/js/script.js",
     img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts:source_folder+"/fonts/**/*.ttf",
