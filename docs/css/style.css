@@ -142,7 +142,7 @@ body {
   margin: 0 auto;
 }
 
-#slides .imgBanner {
+#slides article {
   /*все изображения справа друг от доруга*/
   width: 20%;
   float: left;
@@ -160,17 +160,16 @@ body {
   overflow: hidden;
 }
 
-.imgBanner img {
+article img {
   /*размер изображений слайдера*/
+  margin-top: 62px;
   width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  height: 560px;
 }
 
 #desktop:checked ~ #slider {
   /*размер всего слайдера*/
-  max-width: 100%;
-  /*максимальнная длинна*/
+  /*max-width: 960px; максимальнная длинна*/
 }
 
 /*настройка переключения и положения для левой стрелки*/
@@ -185,7 +184,7 @@ body {
   background: url("../img/banner/ButtonLeft.svg") no-repeat;
   /*заливка фона картинкой без повторений*/
   float: left;
-  margin: 0 0 0 32px;
+  margin: 0 0 0 39px;
   /*сдвиг влево*/
   display: block;
   height: 68px;
@@ -202,7 +201,7 @@ body {
   background: url("../img/banner/ButtonRigth.svg") no-repeat;
   /*заливка фона картинкой без повторений*/
   float: right;
-  margin: 0 32px 0 0;
+  margin: 0 39px 0 0;
   /*сдвиг вправо*/
   display: block;
   height: 68px;
@@ -218,7 +217,6 @@ a {
 .all input {
   /*скрывает стандартные инпуты (чекбоксы) на странице*/
   display: none;
-  margin: 0px;
 }
 
 /*позиция изображения при активации переключателя*/
@@ -263,15 +261,14 @@ a {
 
 #active {
   /*расположение блока с переключателями*/
-  margin-top: 200px;
-  position: relative;
+  margin: 0px 0 0;
   text-align: center;
 }
 
 #active label:hover {
   /*поведение чекбокса при наведении*/
-  background: #ffffff;
-  border-color: white !important;
+  background: #76c8ff;
+  border-color: #777 !important;
   /*выполнение в любом случае*/
 }
 
@@ -283,7 +280,7 @@ a {
 #switch4:checked ~ #active label:nth-child(4),
 #switch5:checked ~ #active label:nth-child(5) {
   background: #ffffff;
-  border-color: #ffffff !important;
+  border-color: #18a3dd !important;
 }
 
 #slides .image {
@@ -321,16 +318,19 @@ a {
   font-family: 'MyriadProRegular';
   font-size: 16px;
   text-decoration: none;
-  padding-top: 20px;
+  padding: 17px;
   line-height: 50px;
 }
 
 .button_conteiner {
+  margin-top: 180px;
+  position: relative;
   border-radius: 80px;
   background: #78bc27;
   width: 166px;
   height: 48px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main {
@@ -340,6 +340,7 @@ a {
 
 .frame49 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 50px 0px 0 0;
 }
@@ -364,6 +365,7 @@ a {
 
 .flexpopylar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -388,7 +390,7 @@ a {
 }
 
 .H2 {
-  font-family: MyriadProBold;
+  font-family: 'MyriadProBold';
   font-style: normal;
   font-size: 32px;
   line-height: 32px;
@@ -407,14 +409,16 @@ a {
 .flexconteiner,
 .upblock2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .upblock1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #E5E6E7;
-  margin: 0px 30px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .upblock2 {
@@ -461,7 +465,6 @@ a {
 
 .blockfooter {
   width: 100%;
-  height: 368px;
   background-color: #333640;
   display: block;
   margin: auto;
@@ -470,6 +473,7 @@ a {
 .flexblock {
   color: white;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 48px;
   margin-left: 39px;
   justify-content: center;
@@ -503,7 +507,7 @@ a {
   margin-top: 24px;
   border-top: 1px solid #5F626B;
   width: 100%;
-  height: 55px;
+  background-color: #333640;
   justify-content: center;
 }
 
