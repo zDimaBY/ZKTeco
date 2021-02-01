@@ -2,168 +2,164 @@
 
 /* font-family: "MyriadProBold"; */
 @font-face {
-    font-family: "MyriadProBold";
-    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
-    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* font-family: "MyriadProBoldItalic"; */
 @font-face {
-    font-family: "MyriadProBoldItalic";
-    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
-    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
-    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "MyriadProBoldItalic";
+  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* font-family: "MyriadProItalic"; */
 @font-face {
-    font-family: "MyriadProItalic";
-    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
-    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
-    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* font-family: "MyriadProRegular"; */
 @font-face {
-    font-family: "MyriadProRegular";
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* font-family: "MyriadProSemiBold"; */
 @font-face {
-    font-family: "MyriadProSemiBold";
-    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
-    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "MyriadProSemiBold";
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /* font-family: "MyriadProSemiBoldItalic"; */
 @font-face {
-    font-family: "MyriadProSemiBoldItalic";
-    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
-    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
-    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+  font-family: "MyriadProSemiBoldItalic";
+  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
-/* font-family: "icon"; */
 @font-face {
-    font-family: 'icomoon';
-    src:  url('..fonts/icons/icomoon.eot?nrktc9');
-    src:  url('..fonts/icons/icomoon.eot?nrktc9#iefix') format('embedded-opentype'),
-      url('..fonts/icons/icomoon.ttf?nrktc9') format('truetype'),
-      url('..fonts/icons/icomoon.woff?nrktc9') format('woff'),
-      url('..fonts/icons/icomoon.svg?nrktc9#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"]::before, [class*=" icon-"]::before {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-Account:before {
-    content: "\e900";
-    color: #fff;
-  }
-  .icon-Arrow-Down:before {
-    content: "\e901";
-  }
-  .icon-Arrow-Top:before {
-    content: "\e902";
-  }
-  .icon-Arrow:before {
-    content: "\e903";
-  }
-  .icon-Atach:before {
-    content: "\e904";
-  }
-  .icon-Cart:before {
-    content: "\e905";
-    color: #fff;
-  }
-  .icon-Characteristic:before {
-    content: "\e906";
-    color: #fff;
-  }
-  .icon-Description:before {
-    content: "\e907";
-    color: #fff;
-  }
-  .icon-Download:before {
-    content: "\e908";
-    color: #fff;
-  }
-  .icon-Info:before {
-    content: "\e909";
-    color: #fff;
-  }
-  .icon-Info-1:before {
-    content: "\e90a";
-    color: #fff;
-  }
-  .icon-Menu:before {
-    content: "\e90b";
-    color: #fff;
-  }
-  .icon-Minus:before {
-    content: "\e90c";
-  }
-  .icon-Play:before {
-    content: "\e90d";
-    color: #fff;
-  }
-  .icon-Plus:before {
-    content: "\e90e";
-  }
-  .icon-Refresh:before {
-    content: "\e90f";
-    color: #fff;
-  }
-  .icon-Scale:before {
-    content: "\e910";
-    color: #fff;
-  }
-  .icon-Search:before {
-    content: "\e911";
-    color: #fff;
-  }
-  .icon-Share:before {
-    content: "\e912";
-    color: #fff;
-  }
-  .icon-X:before {
-    content: "\e913";
-    color: #fff;
-  }
+  font-family: 'icomoon';
+  src:  url('../fonts/icons/icomoon.woff?9q2mif') format('woff'),
+  url('../fonts/icons/icomoon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon"], [class*=" icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconAccount:before {
+  content: "\e900";
+  color: #fff;
+}
+.iconArrow-Down:before {
+  content: "\e901";
+  color: #fff;
+}
+.iconArrow-Top:before {
+  content: "\e902";
+  color: #fff;
+}
+.iconArrow:before {
+  content: "\e903";
+  color: #fff;
+}
+.iconAtach:before {
+  content: "\e904";
+  color: #fff;
+}
+.iconCart:before {
+  content: "\e905";
+  color: #fff;
+}
+.iconCharacteristic:before {
+  content: "\e906";
+  color: #fff;
+}
+.iconDescription:before {
+  content: "\e907";
+  color: #fff;
+}
+.iconDownload:before {
+  content: "\e908";
+  color: #fff;
+}
+.iconGo .path1:before {
+  content: "\e909";
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.iconGo .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+.iconGo .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.iconInfo:before {
+  content: "\e90c";
+  color: #fff;
+}
+.iconMenu:before {
+  content: "\e90d";
+  color: #fff;
+}
+.iconMinus:before {
+  content: "\e90e";
+  color: #fff;
+}
+.iconPlay:before {
+  content: "\e90f";
+  color: #fff;
+}
+.iconPlus:before {
+  content: "\e910";
+  color: #fff;
+}
+.iconRefresh:before {
+  content: "\e911";
+  color: #fff;
+}
+.iconScale:before {
+  content: "\e912";
+  color: #fff;
+}
+.iconSearch:before {
+  content: "\e913";
+  color: #fff;
+}
+.iconShare:before {
+  content: "\e914";
+  color: #fff;
+}
+.iconX:before {
+  content: "\e915";
+  color: #fff;
+}

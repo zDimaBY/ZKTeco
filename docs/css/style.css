@@ -122,12 +122,16 @@ body {
   margin: 0px 0px 14px 0px;
 }
 
-.ButtonPackage {
-  margin: 0 16px 14px 21px;
+.iconScale {
+  font-size: 24px;
+  margin: 0 16px 33px 21px;
+  text-decoration: none;
 }
 
-.ButtonBay {
-  margin: 0px 0px 14px 0px;
+.iconCart {
+  font-size: 24px;
+  margin: 0px 0px 33px 0px;
+  text-decoration: none;
 }
 
 #slider {
@@ -333,6 +337,21 @@ a {
   margin-right: auto;
 }
 
+.iconabout {
+  text-decoration: none;
+}
+
+.button_conteiner404 {
+  margin-bottom: 48px;
+  position: relative;
+  border-radius: 80px;
+  background: #78bc27;
+  width: 200px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .main {
   margin: 0;
   padding: 0;
@@ -483,7 +502,11 @@ a {
   width: 202px;
   color: #E5E6E7;
   font-size: 14px;
-  line-height: 18px;
+}
+
+.blockfootertext {
+  line-height: 13px;
+  margin-top: 15px;
 }
 
 .footorblock2 {
@@ -646,4 +669,20 @@ a {
   color: white;
   align-items: center;
   text-decoration: none;
+}
+
+.error404 {
+  display: flex;
+  margin: auto;
+  margin-top: 124px;
+  margin-bottom: 45px;
+}
+
+.error404text {
+  display: flex;
+  margin: auto;
+  margin-bottom: 32px;
+  width: 301px;
+  height: 48px;
+  text-align: center;
 }

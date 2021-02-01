@@ -6,8 +6,7 @@
 
 @font-face {
   font-family: "MyriadProBold";
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
-  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  src: url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -16,8 +15,7 @@
 
 @font-face {
   font-family: "MyriadProBoldItalic";
-  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
-  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"), url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -26,8 +24,7 @@
 
 @font-face {
   font-family: "MyriadProItalic";
-  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
-  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -36,8 +33,7 @@
 
 @font-face {
   font-family: "MyriadProRegular";
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -46,8 +42,7 @@
 
 @font-face {
   font-family: "MyriadProSemiBold";
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -56,25 +51,21 @@
 
 @font-face {
   font-family: "MyriadProSemiBoldItalic";
-  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
-  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"), url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
 
-/* font-family: "icon"; */
-
 @font-face {
   font-family: 'icomoon';
-  src: url("..fonts/icons/icomoon.eot?nrktc9");
-  src: url("..fonts/icons/icomoon.eot?nrktc9#iefix") format("embedded-opentype"), url("..fonts/icons/icomoon.ttf?nrktc9") format("truetype"), url("..fonts/icons/icomoon.woff?nrktc9") format("woff"), url("..fonts/icons/icomoon.svg?nrktc9#icomoon") format("svg");
+  src: url("../fonts/icons/icomoon.woff?9q2mif") format("woff"), url("../fonts/icons/icomoon.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
+[class^="icon"],
+[class*=" icon"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -88,96 +79,116 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Account:before {
+.iconAccount:before {
   content: "\e900";
   color: #fff;
 }
 
-.icon-Arrow-Down:before {
+.iconArrow-Down:before {
   content: "\e901";
+  color: #fff;
 }
 
-.icon-Arrow-Top:before {
+.iconArrow-Top:before {
   content: "\e902";
+  color: #fff;
 }
 
-.icon-Arrow:before {
+.iconArrow:before {
   content: "\e903";
+  color: #fff;
 }
 
-.icon-Atach:before {
+.iconAtach:before {
   content: "\e904";
+  color: #fff;
 }
 
-.icon-Cart:before {
+.iconCart:before {
   content: "\e905";
   color: #fff;
 }
 
-.icon-Characteristic:before {
+.iconCharacteristic:before {
   content: "\e906";
   color: #fff;
 }
 
-.icon-Description:before {
+.iconDescription:before {
   content: "\e907";
   color: #fff;
 }
 
-.icon-Download:before {
+.iconDownload:before {
   content: "\e908";
   color: #fff;
 }
 
-.icon-Info:before {
+.iconGo .path1:before {
   content: "\e909";
-  color: #fff;
+  color: white;
+  opacity: 0.6;
 }
 
-.icon-Info-1:before {
+.iconGo .path2:before {
   content: "\e90a";
-  color: #fff;
+  margin-left: -1em;
+  color: white;
+  opacity: 0.3;
 }
 
-.icon-Menu:before {
+.iconGo .path3:before {
   content: "\e90b";
+  margin-left: -1em;
+  color: white;
+}
+
+.iconInfo:before {
+  content: "\e90c";
   color: #fff;
 }
 
-.icon-Minus:before {
-  content: "\e90c";
-}
-
-.icon-Play:before {
+.iconMenu:before {
   content: "\e90d";
   color: #fff;
 }
 
-.icon-Plus:before {
+.iconMinus:before {
   content: "\e90e";
+  color: #fff;
 }
 
-.icon-Refresh:before {
+.iconPlay:before {
   content: "\e90f";
   color: #fff;
 }
 
-.icon-Scale:before {
+.iconPlus:before {
   content: "\e910";
   color: #fff;
 }
 
-.icon-Search:before {
+.iconRefresh:before {
   content: "\e911";
   color: #fff;
 }
 
-.icon-Share:before {
+.iconScale:before {
   content: "\e912";
   color: #fff;
 }
 
-.icon-X:before {
+.iconSearch:before {
   content: "\e913";
+  color: #fff;
+}
+
+.iconShare:before {
+  content: "\e914";
+  color: #fff;
+}
+
+.iconX:before {
+  content: "\e915";
   color: #fff;
 }
