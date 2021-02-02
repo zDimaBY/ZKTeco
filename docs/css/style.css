@@ -10,6 +10,11 @@ html {
   box-sizing: inherit;
 }
 
+ol,
+ul {
+  padding: 0;
+}
+
 body {
   font-family: 'MyriadProRegular';
   font-size: 18px;
