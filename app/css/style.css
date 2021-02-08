@@ -760,3 +760,7 @@ label, a{ /*при наведении на стрелки или переклю�
     height: 48px;
     text-align: center;
   }
+.footertextdecoration{
+    text-decoration: none;
+    color: #e5e6e7;
+}

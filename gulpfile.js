@@ -8,6 +8,7 @@ let path={
     html: project_folder+"/",
     css: project_folder+"/css/",
     js: project_folder+"/js/",
+    php: project_folder+"/php/",
     img: project_folder+"/img/",
     fonts: project_folder+"/fonts/",
   },
@@ -15,6 +16,7 @@ let path={
     html: [source_folder+"/*.html","!"+source_folder+"/_*.html"],
     css: source_folder+"/css/*.css",
     js: source_folder+"/js/*.js",
+    php: source_folder+"/php/*.php",
     img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts:source_folder+"/fonts/**/*.ttf",
   },
@@ -22,6 +24,7 @@ let path={
     html: source_folder+"/**/*.html",
     css: source_folder+"/css/**/*.css",
     js: source_folder+"/js/**/*.js",
+    php: source_folder+"/php/*.php",
     img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico,webp}",
   },
   clean:"./"+project_folder+"/"
@@ -80,6 +83,11 @@ function js(){
     .pipe(dest(path.docs.js))
     .pipe(browsersync.stream())
 }
+function php(){
+  return src(path.app.php)
+    .pipe(dest(path.docs.php))
+    .pipe(browsersync.stream())
+}
 function img(){
   return src(path.app.img)
   .pipe(webp({quality:70}))
@@ -109,12 +117,13 @@ function watchFiles(params){
   gulp.watch([path.watch.html],html)
   gulp.watch([path.watch.css],css)
   gulp.watch([path.watch.js],js)
+  gulp.watch([path.watch.php],php)
   gulp.watch([path.watch.img],img)
 }
 function clean(params){
   return del(path.clean);
 }
-let docs=gulp.series(clean, gulp.parallel(css, js, html, img, fonts));
+let docs=gulp.series(clean, gulp.parallel(css, js, php, html, img, fonts));
 let watch=gulp.parallel(watchFiles,docs,browserSync);
 
 exports.fonts=fonts;
