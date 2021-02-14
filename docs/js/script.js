@@ -12,20 +12,21 @@ $(document).ready(function(){
         slidesToShow:1,
         autoplay:true,
         speed:1000,
-        autoplaySpeed:800,
+        autoplaySpeed:10000,
         responsive:[
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow:1
-                }
-            },
-            {
-                breakpoint: 550,
-                settings: {
-                    slidesToShow:1
-                }
-            }
-        ]
+			{
+				breakpoint: 768,
+				settings: {
+					arrows:false,
+                    dots:false
+				}
+			}]
+    });
+    $('.slidercatalog').slick({
+        arrows:false,
+        dots:true,
+        slidesToShow:1,
+        autoplay:false,
+        speed:500,
     });
 });

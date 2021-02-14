@@ -37,7 +37,7 @@
     margin-right: 0;
   }
 
-  .CallBack {
+  .buttonCallBack {
     margin: 0 0 -45px 69.3%;
   }
 
@@ -88,7 +88,7 @@
     margin: 0 0 -49px -72.2%;
   }
 
-  .CallBack {
+  .buttonCallBack {
     display: none;
   }
 
@@ -115,6 +115,12 @@
 
   .flexdownfooter {
     height: 80px;
+  }
+
+  .footersupport {
+    position: absolute;
+    right: 39px;
+    margin-top: 14px;
   }
 }
 
@@ -209,7 +215,9 @@
   .header__logo-pic {
     margin-left: 150px;
   }
+}
 
+@media (max-width: 485px) {
   .hiuser {
     display: none;
   }
@@ -234,5 +242,13 @@
   .footersupport {
     margin-top: 79px;
     right: 3px;
+  }
+
+  .frame49 {
+    display: none;
+  }
+
+  .slidercatalog {
+    display: block;
   }
 }

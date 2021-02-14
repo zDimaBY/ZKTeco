@@ -80,57 +80,68 @@
 }
 
 .iconAccount:before {
+  font-size: 24px;
   content: "\e900";
   color: #fff;
 }
 
 .iconArrow-Down:before {
+  font-size: 24px;
   content: "\e901";
   color: #fff;
 }
 
 .iconArrow-Top:before {
+  font-size: 24px;
   content: "\e902";
   color: #fff;
 }
 
 .iconArrow:before {
+  font-size: 24px;
   content: "\e903";
   color: #fff;
 }
 
 .iconAtach:before {
+  font-size: 24px;
   content: "\e904";
   color: #fff;
 }
 
 .iconCart:before {
+  font-size: 24px;
   content: "\e905";
   color: #fff;
 }
 
 .iconCharacteristic:before {
+  font-size: 24px;
   content: "\e906";
   color: #fff;
 }
 
 .iconDescription:before {
+  font-size: 24px;
   content: "\e907";
   color: #fff;
 }
 
 .iconDownload:before {
+  font-size: 24px;
   content: "\e908";
   color: #fff;
 }
 
 .iconGo .path1:before {
+  font-size: 24px;
   content: "\e909";
   color: white;
   opacity: 0.6;
 }
 
 .iconGo .path2:before {
+  font-size: 24px;
   content: "\e90a";
   margin-left: -1em;
   color: white;
@@ -138,57 +149,90 @@
 }
 
 .iconGo .path3:before {
+  font-size: 24px;
   content: "\e90b";
   margin-left: -1em;
   color: white;
 }
 
+.iconGoblack .path1black:before {
+  font-size: 24px;
+  content: "\e909";
+  color: black;
+  opacity: 0.6;
+}
+
+.iconGoblack .path2black:before {
+  font-size: 24px;
+  content: "\e90a";
+  margin-left: -1em;
+  color: black;
+  opacity: 0.3;
+}
+
+.iconGoblack .path3black:before {
+  font-size: 24px;
+  content: "\e90b";
+  margin-left: -1em;
+  color: black;
+}
+
 .iconInfo:before {
+  font-size: 24px;
   content: "\e90c";
   color: #fff;
 }
 
 .iconMenu:before {
+  font-size: 24px;
   content: "\e90d";
   color: #fff;
 }
 
 .iconMinus:before {
+  font-size: 24px;
   content: "\e90e";
   color: #fff;
 }
 
 .iconPlay:before {
+  font-size: 24px;
   content: "\e90f";
   color: #fff;
 }
 
 .iconPlus:before {
+  font-size: 24px;
   content: "\e910";
   color: #fff;
 }
 
 .iconRefresh:before {
+  font-size: 24px;
   content: "\e911";
   color: #fff;
 }
 
 .iconScale:before {
+  font-size: 24px;
   content: "\e912";
   color: #fff;
 }
 
 .iconSearch:before {
+  font-size: 24px;
   content: "\e913";
   color: #fff;
 }
 
 .iconShare:before {
+  font-size: 24px;
   content: "\e914";
   color: #fff;
 }
 
 .iconX:before {
+  font-size: 24px;
   content: "\e915";
   color: #fff;
 }
