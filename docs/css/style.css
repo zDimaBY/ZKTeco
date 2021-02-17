@@ -104,7 +104,7 @@ p {
 }
 
 .header_logo {
-  margin: 0 0 -49px -76.2%;
+  margin: 0 0 -48px -76.2%;
   position: absolute;
 }
 
@@ -122,7 +122,7 @@ p {
 }
 
 .Search {
-  margin: 0 0 -64px 31.4%;
+  margin: 0 0 -63px 31.4%;
   position: absolute;
 }
 
@@ -146,7 +146,7 @@ p {
 }
 
 .nomber {
-  margin: 0 0 -34px 56%;
+  margin: 0 0 -33px 56.1%;
   position: absolute;
 }
 
@@ -166,7 +166,7 @@ p {
 }
 
 .itemiconScale {
-  margin: 0 0 -15px 86%;
+  margin: 0 0 -17px 86.4%;
   background: #78BC27;
   width: 14px;
   height: 14px;
@@ -184,7 +184,7 @@ p {
 
 .itemiconCart {
   position: absolute;
-  margin: 0 0 -15px 96%;
+  margin: 0 0 -17px 95.7%;
   background: #78BC27;
   width: 14px;
   height: 14px;
@@ -432,10 +432,10 @@ a.buttonCallBack {
   -ms-user-select: none;
   user-select: none;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 16px;
   border-radius: 4px;
   transition: 0.2s;
-  margin: 0 0 -45px 74.3%;
+  margin: 0 0 -44px 74.3%;
   padding: 5px 0px 0px 0px;
   text-align: center;
   width: 86px;
@@ -564,7 +564,7 @@ a.buttonerror404:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 32px 0px 0 0;
+  margin: 24px 0px 0 0;
 }
 
 .rectangle1 {
@@ -818,7 +818,7 @@ a.buttonerror404:active {
   margin: -13px 0px 0px 6px;
 }
 
-.bestchoice:hover {
+.contenerpop:hover .bestchoice {
   -webkit-animation: shake 0.7s;
   animation: shake 0.7s;
   -webkit-animation-iteration-count: infinite;
@@ -1235,7 +1235,7 @@ a.buttonerror404:active {
 
 .menu__btn {
   position: fixed;
-  margin: 38px 0 0 -48%;
+  margin: 37px 0 0 -4.3%;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -1334,4 +1334,9 @@ a.buttonerror404:active {
 
 .footertextdecoration {
   color: #e5e6e7;
+  transition: 0.2s;
+}
+
+.footertextdecoration:hover {
+  color: #78bc27;
 }
