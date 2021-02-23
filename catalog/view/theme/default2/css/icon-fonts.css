@@ -1,0 +1,181 @@
+/* Код для подключения шрифта в /css/stylename.css */
+
+/* font-family: "MyriadProBold"; */
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+  font-family: "MyriadProBoldItalic";
+  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+  font-family: "MyriadProSemiBoldItalic";
+  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icons/icomoon.woff?9q2mif') format('woff'),
+  url('../fonts/icons/icomoon.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon"], [class*=" icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconAccount:before { font-size: 24px;
+  content: "\e900";
+  color: #fff;
+}
+.iconArrow-Down:before { font-size: 24px;
+  content: "\e901";
+  color: #fff;
+}
+.iconArrow-Top:before { font-size: 24px;
+  content: "\e902";
+  color: #fff;
+}
+.iconArrow:before { font-size: 24px;
+  content: "\e903";
+  color: #fff;
+}
+.iconAtach:before { font-size: 24px;
+  content: "\e904";
+  color: #fff;
+}
+.iconCart:before { font-size: 24px;
+  content: "\e905";
+  color: #fff;
+}
+.iconCharacteristic:before { font-size: 24px;
+  content: "\e906";
+  color: #fff;
+}
+.iconDescription:before { font-size: 24px;
+  content: "\e907";
+  color: #fff;
+}
+.iconDownload:before { font-size: 24px;
+  content: "\e908";
+  color: #fff;
+}
+.iconGo .path1:before { font-size: 24px;
+  content: "\e909";
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.iconGo .path2:before { font-size: 24px;
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+.iconGo .path3:before { font-size: 24px;
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.iconGoblack .path1black:before { font-size: 24px;
+  content: "\e909";
+  color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.iconGoblack .path2black:before { font-size: 24px;
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.3;
+}
+.iconGoblack .path3black:before { font-size: 24px;
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.iconInfo:before { font-size: 24px;
+  content: "\e90c";
+  color: #fff;
+}
+.iconMenu:before { font-size: 24px;
+  content: "\e90d";
+  color: #fff;
+}
+.iconMinus:before { font-size: 24px;
+  content: "\e90e";
+  color: #fff;
+}
+.iconPlay:before { font-size: 24px;
+  content: "\e90f";
+  color: #fff;
+}
+.iconPlus:before { font-size: 24px;
+  content: "\e910";
+  color: #fff;
+}
+.iconRefresh:before { font-size: 24px;
+  content: "\e911";
+  color: #fff;
+}
+.iconScale:before { font-size: 24px;
+  content: "\e912";
+  color: #fff;
+}
+.iconSearch:before { font-size: 24px;
+  content: "\e913";
+  color: #fff;
+}
+.iconShare:before { font-size: 24px;
+  content: "\e914";
+  color: #fff;
+}
+.iconX:before { font-size: 24px;
+  content: "\e915";
+  color: #fff;
+}

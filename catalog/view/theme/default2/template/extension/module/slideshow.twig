@@ -1,0 +1,8 @@
+<div class="slider">
+  {% for banner in banners %}
+  <div class="slideritem">
+      <a href="{{ banner.link }}" class="button1">подробнее<span class="iconGo iconGoPosition"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span></a>
+      <img src="{{ banner.image }}" alt="{{ banner.title }}" class="imgslider">
+  </div>
+  {% endfor %}
+</div>

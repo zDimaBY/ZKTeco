@@ -1,0 +1,20 @@
+<div class="popylar">
+    <p class="textpopylarh2">{{ heading_title }}</p>
+    <p class="textpopylarp">то, что выбирает большинство, и мы рекомендуем</p>
+    <div class="flexpopylar">
+    {% for product in products %}
+      <a href="{{ product.href }}" class="contenerpop">
+        <div class="popylarimageon">
+            <p class="popylertexth4">{{ product.name }}</p>
+            <p class="textinfopopylar">{{ product.description }}</p>
+            <p class="textinfopopylarpince">от&nbsp;{{ product.price }}</p>
+            <img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="popylarimage1">
+            <img src="./catalog/view/theme/default2/img/popylar/bestchoice.svg" alt="от 3 321 ₽" class="bestchoice">
+        </div>
+      </a>
+    {% endfor %}
+    </div>
+</div>
+<div class="productcatalog">
+  <a href="{{category.href}}" class="button2">каталог продукции<span class="iconGoblack iconGoPosition"><span class="path1black"></span><span class="path2black"></span><span class="path3black"></span></span></a>
+</div>

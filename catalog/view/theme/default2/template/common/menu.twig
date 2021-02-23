@@ -1,0 +1,19 @@
+{% if categories %}
+  {% for category in categories %}
+    {% if category.children %}
+      <a href="{{ category.href }}" class="urlcatalog">
+        <div class="rectangle1">
+          <img src="{{ category.thumb }}" alt="" title="{{ heading_title }}"/>
+          <p class="rectangletext">{{ category.name }}</p>
+        </div>
+      </a>
+     {% else %}
+      <a href="{{ category.href }}" class="urlcatalog">
+        <div class="rectangle1">
+          <img src="{{ category.thumb }}" alt="" title="{{ heading_title }}"/>
+          <p class="rectangletext">{{ category.name }}</p>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+{% endif %}
