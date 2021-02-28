@@ -711,7 +711,7 @@
                 }
             }
         
-            // Update Height
+            // Обновить высоту
             if (newHeight) s.wrapper.css('height', newHeight + 'px');
         };
         s.updateContainerSize = function () {

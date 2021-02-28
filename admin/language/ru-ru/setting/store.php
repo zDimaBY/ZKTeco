@@ -33,6 +33,7 @@ $_['entry_address']                    = 'Адрес';
 $_['entry_geocode']                    = 'Геокод';
 $_['entry_email']                      = 'E-Mail';
 $_['entry_telephone']                  = 'Телефон';
+$_['fentry_telephone']       = 'Footer телефон';
 $_['entry_fax']                        = 'Факс';
 $_['entry_image']                      = 'Изображение';
 $_['entry_open']                       = 'Режим работы';

@@ -24,6 +24,7 @@ $_['entry_name']       = 'Название магазина';
 $_['entry_address']    = 'Адрес';
 $_['entry_geocode']    = 'Геокод';
 $_['entry_telephone']  = 'Телефон';
+$_['fentry_telephone'] = 'Footer телефон';
 $_['entry_fax']        = 'Факс';
 $_['entry_image']      = 'Изображение';
 $_['entry_open']       = 'Режим работы';

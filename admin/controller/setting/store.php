@@ -281,7 +281,13 @@ class ControllerSettingStore extends Controller {
 		} else {
 			$data['config_meta_title'] = '';
 		}
-
+		if (isset($this->request->post['upconfig_meta_description'])) {
+			$data['upconfig_meta_description'] = $this->request->post['upconfig_meta_description'];
+		} elseif (isset($store_info['upconfig_meta_description'])) {
+			$data['upconfig_meta_description'] = $store_info['upconfig_meta_description'];
+		} else {
+			$data['upconfig_meta_description'] = '';
+		}
 		if (isset($this->request->post['config_meta_description'])) {
 			$data['config_meta_description'] = $this->request->post['config_meta_description'];
 		} elseif (isset($store_info['config_meta_description'])) {

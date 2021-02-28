@@ -236,7 +236,7 @@ CREATE TABLE `oc_banner_image` (
   `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,
   `banner_id` int(11) NOT NULL,
   `language_id` int(11) NOT NULL,
-  `title` varchar(64) NOT NULL,
+  `title` varchar(255) NOT NULL,
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0',
@@ -1021,10 +1021,10 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Рубль', 'RUB', '', 'р.', '2', 1.00000000, 1, '2017-07-19 22:28:03'),
-(2, 'US Dollar', 'USD', '$', '', '2', 0.01697793, 1, '2017-07-19 21:28:21'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.01476363, 1, '2017-07-19 21:28:21'),
-(4, 'Гривна', 'UAH', '', 'грн.', '2', 0.44016022, 1, '2017-07-19 21:28:21');
+(1, 'Рубль', 'RUB', '', ' ₽', '2', 1.00000000, 1, '2017-07-19 22:28:03'),
+(2, 'US Dollar', 'USD', ' $', '', '2', 0.01697793, 1, '2017-07-19 21:28:21'),
+(3, 'Euro', 'EUR', '', ' €', '2', 0.01476363, 1, '2017-07-19 21:28:21'),
+(4, 'Гривна', 'UAH', '', ' ₴', '2', 0.44016022, 1, '2017-07-19 21:28:21');
 
 -----------------------------------------------------------
 
@@ -1815,7 +1815,7 @@ INSERT INTO `oc_layout` (`layout_id`, `name`) VALUES
 (6, 'Аккаунт'),
 (7, 'Оформление заказа'),
 (8, 'Контакты'),
-(9, 'Карта сайта'),
+(9, 'Каталог'),
 (10, 'Партнерская программа'),
 (11, 'Информация'),
 (12, 'Сравнение'),
@@ -3456,6 +3456,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_ftp_port', '21', 0),
 (0, 'config', 'config_ftp_hostname', '', 0),
 (0, 'config', 'config_meta_title', 'Ваш магазин', 0),
+(0, 'config', 'upconfig_meta_description', 'config meta description', 0),
 (0, 'config', 'config_meta_description', 'Мой магазин', 0),
 (0, 'config', 'config_meta_keyword', '', 0),
 (0, 'config', 'config_theme', 'default', 0),
@@ -3508,6 +3509,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_image', '', 0),
 (0, 'config', 'config_fax', '', 0),
 (0, 'config', 'config_telephone', '123456789', 0),
+(0, 'config', 'fconfig_telephone', '123456789', 0),
 (0, 'config', 'config_email', 'demo@opencart.com', 0),
 (0, 'config', 'config_geocode', '', 0),
 (0, 'config', 'config_owner', 'Ваш магазин', 0),

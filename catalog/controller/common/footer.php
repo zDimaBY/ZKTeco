@@ -1,10 +1,50 @@
 <?php
 class ControllerCommonFooter extends Controller {
 	public function index() {
+		// Menu
+		$this->load->language('common/menu');
+		$this->load->model('catalog/category');
+		$this->load->model('catalog/product');
+		$data['categories'] = array();
+		$categories = $this->model_catalog_category->getCategories(0);
+		foreach ($categories as $category) {
+			if ($category['top']) {
+				// Level 2
+				$children_data = array();
+
+				$children = $this->model_catalog_category->getCategories($category['category_id']);
+
+				foreach ($children as $child) {
+					$filter_data = array(
+						'filter_category_id'  => $child['category_id'],
+						'filter_sub_category' => true
+					);
+
+					$children_data[] = array(
+						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
+					);
+				}
+				// Level 1
+				$data['categories'][] = array(
+					'name'     => $category['name'],
+					'children' => $children_data,
+					'column'   => $category['column'] ? $category['column'] : 1,
+					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
+				);
+			}
+		}
+		// sitemap.php
+		$this->load->language('information/sitemap');
+		$this->document->setTitle($this->language->get('heading_title'));
+
+		$data['breadcrumbs'][] = array(
+			'text' => $this->language->get('heading_title'),
+			'href' => $this->url->link('information/sitemap')
+		);
 		$this->load->language('common/footer');
 
 		$this->load->model('catalog/information');
-
 		$data['informations'] = array();
 
 		foreach ($this->model_catalog_information->getInformations() as $result) {
@@ -15,7 +55,8 @@ class ControllerCommonFooter extends Controller {
 				);
 			}
 		}
-
+		$data['telephone'] = $this->config->get('config_telephone');
+		$data['ftelephone'] = $this->config->get('fconfig_telephone');
 		$data['contact'] = $this->url->link('information/contact');
 		$data['return'] = $this->url->link('account/return/add', '', true);
 		$data['sitemap'] = $this->url->link('information/sitemap');
@@ -28,6 +69,8 @@ class ControllerCommonFooter extends Controller {
 		$data['order'] = $this->url->link('account/order', '', true);
 		$data['wishlist'] = $this->url->link('account/wishlist', '', true);
 		$data['newsletter'] = $this->url->link('account/newsletter', '', true);
+		$data['address'] = nl2br($this->config->get('config_address'));
+		$data['open'] = nl2br($this->config->get('config_open'));
 
 		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 

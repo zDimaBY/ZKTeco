@@ -8,6 +8,9 @@ html {
 ol,ul{
     padding: 0;
 }
+:focus {
+    outline: 0;
+}
 
 body{
     font-family: 'MyriadProRegular';
@@ -19,6 +22,9 @@ body{
     text-align: left;
     margin: 0px;
 
+}
+.catalog_header_text:hover{
+    color: #78bc27;
 }
 .header{
     z-index: 100;
@@ -225,8 +231,8 @@ a.button1 {
     user-select: none;
     border-radius: 80px;
     transition: 0.2s;
-    margin-top: 2.8%;
-    margin-left: 4.94%;
+    margin-top: 3.45%;
+    margin-left: 4.91%;
     padding: 11px 0px 0px 25px;
     width: 166px;
     height: 48px;
@@ -253,7 +259,7 @@ a.button1:active { background: #b3ff00; }
 }
 .slider .slick-arrow{
 	position: absolute;
-	top: 54.2%;
+	top: 53.75%;
 	margin: 0;
 	z-index: 10;
 	font-size: 0;
@@ -285,7 +291,7 @@ a.button1:active { background: #b3ff00; }
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    margin: -50px 0px 0px 7px;
+    margin: -41px 0px 0px -8px;
     border-width: 0;
     position: relative;
 }
@@ -320,6 +326,16 @@ a.button1:active { background: #b3ff00; }
 	font-size: 0;
 	width: 48px;
 	height: 48px;
+}
+/* Ограничивающая оболочка */
+.slidercatalog .slick-list {
+	overflow: hidden;
+    text-align:-webkit-center;
+}
+/* Лента слайдов */
+.slidercatalog .slick-track{
+	display: flex;
+	align-items: flex-start;
 }
 .slidercatalog .slick-arrow.slick-prev{
 	left: 39px;
@@ -399,7 +415,7 @@ a.button3 {
     user-select: none;
     border-radius: 80px;
     transition: 0.2s;
-    margin: 1px 1px 1px 1px;
+    margin: 0px 0px 0px 0px;
     padding: 10px 0 0 35px;
     width: 130px;
     height: 48px;
@@ -411,14 +427,14 @@ a.button4 {
     border: 1px solid #78BC27;
     color: #fff;
     background: #78BC27;
-    
     user-select: none;
     border-radius: 80px;
     transition: 0.2s;
-    margin: 1px 1px 1px 1px;
+    margin: -2px 0px 0px -1px;
     padding: 10px 0 0 35px;
     width: 130px;
     height: 48px;
+    display: none;
   } 
 a.button4:hover { background: #608300; }
 a.button4:active { background: #b3ff00; }
@@ -437,6 +453,12 @@ a.buttonerror404 {
     height: 48px;
     margin-bottom: 48px;
   } 
+.upblock1:nth-child(even) .flexposition .block1 .button3{
+    display: none;
+}
+.upblock1:nth-child(even) .flexposition .block1 .button4{
+    display: block;
+}
 a.buttonerror404:hover { background: #608300; }
 a.buttonerror404:active { background: #b3ff00; }
 .iconabout{
@@ -454,14 +476,15 @@ a.buttonerror404:active { background: #b3ff00; }
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-    margin: 24px 0px 0 0;
+    margin: 21px 0px 0 0;
 }
 .rectangle1{
-    max-width: min-content;
-    width: 258px;
+    width: 235px;
     height: 259px;
     border: 1px solid #E5E6E7;
     transition: 1s;
+    padding: 20px;
+    padding-top: 30px;
 }
 .rectangle1:hover { 
     background: #00000021; 
@@ -541,18 +564,15 @@ a.buttonerror404:active { background: #b3ff00; }
     margin: 32px 23px 1px 23px;
 }
 .rectangletext{
-    margin: -25px 0px 0px 35px;
+    margin: 22px 0px 0px 9px;
     color: #21232E;
-}
-.urlcatalog{
-    
 }
 .popylar{
     text-align: center;
 }
 .textpopylarh2{
     margin: 0;
-    padding: 59px 0 0 12px;
+    padding: 64px 0 0 0px;
     font-size: 32px;
     line-height: 32px;
     font-family: 'MyriadProBold';
@@ -560,7 +580,7 @@ a.buttonerror404:active { background: #b3ff00; }
 }
 .textpopylarp{
     margin: 0;
-    padding: 11px 0px 33px 13px;
+    padding: 8px 0px 31px 0px;
     font-size: 18px;
     line-height: 24px;
 }
@@ -649,7 +669,7 @@ a.buttonerror404:active { background: #b3ff00; }
     margin: 0px 0px -20px 0px;
 }
 .bestchoice{
-    margin: 15px 0px 5px 88px;
+    margin: -6px 0px 19px 82px;
     display: none;
 }
 .contenerpop:hover .bestchoice{
@@ -670,43 +690,83 @@ a.buttonerror404:active { background: #b3ff00; }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 .discount{
-    margin-top: 110px;
+    margin-top: 0px;
 }
 .productcatalog{
-    padding: 53px 0px 0px 15px;
+    padding: 38px 0px 98px 0px;
     display: flex;
     justify-content: center;
 }
-.pconteiner1, .upblock2, .upblock1{
+.pconteiner{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.pconteiner1{
-    margin-left: 17px;
 }
 .flexposition{
     display: flex;
     flex-wrap: wrap;
-    margin: 1px 1px 1px 1px;
+    margin: 0px 3px 0px 62px;
 }
 .upblock1{
     background-color: #E5E6E7;
     width: 666px;
-    margin: 0px 30px 0px 0px;
+    height: 372px;
+    margin: 15px;
+    overflow: hidden;
 }
 .upblock1:hover{
     animation: upblock 0.3s;
     animation-iteration-count: 1;
 }
-.upblock2{
+.upblock1:nth-child(even) {
     border: 2px solid #78BC27;
-    width: 666px;
-    margin: 0px 0px 0px 0px;
+    background-color: #fff;
+    
+    margin: 15px;
 }
-.upblock2:hover{
-    animation: upblock 0.3s;
-    animation-iteration-count: 1;
+.block2text3{
+    color: #5F626B;
+    font-family: 'MyriadProBold';
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0px 0px 35px 0px;
+    display: none;
+}
+.upblock1:nth-child(even) .flexposition .block1 .block2text3{
+    display: block;
+}
+.upblock1:nth-child(even) .flexposition .block1 .block1text2{
+    width: 300px;
+    height: 66px;
+}
+.blackcube{
+    display: none;
+    width: 82px;
+    height: 65px;
+    background: #21232E;
+    color: #fff;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'MyriadProBold';
+    padding: 12px 0px 0px 13px;
+}
+.greencube{
+    width: 64px;
+    height: 64px;
+    background: #78BC27;
+    color: #fff;
+    align-items: center;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'MyriadProBold';
+    padding: 17px 0px 0px 10px;
+}
+.upblock1:nth-child(even) .flexposition .block1 .greencube{
+    display: none;
+}
+.upblock1:nth-child(even) .flexposition .block1 .blackcube{
+    display: block;
 }
 @keyframes upblock {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -720,48 +780,23 @@ a.buttonerror404:active { background: #b3ff00; }
     font-family: 'MyriadProBold';
     font-size: 44px;
     line-height: 44px;
-    margin: 13px 0 0 0px;
+    margin: 25px 0 0 0px;
 }
 .block1text2{
     color: #5F626B;
     width: 341px;
     height: 129px;
-    margin: 20px -42px 0px 0px;
-}
-.block2text1{
-    color: #5F626B;
-    font-family: 'MyriadProBold';
-    font-size: 44px;
-    line-height: 44px;
-    margin: 10px 0px 0px 0px;
-}
-.block2text2{
-    color: #5F626B;
-    width: 220px;
-    margin: 20px 0px 0px 0px;
-}
-.block2text3{
-    color: #5F626B;
-    font-family: 'MyriadProBold';
-    font-size: 24px;
-    line-height: 28px;
-    margin: 17px 0px 36px 0px;
-}
-.blockimg2{
-    margin: 8px -10px 0px 10px;
+    margin: 15px -42px 0px 0px;
 }
 .blockimg1, .blockimg1pic{
-    margin: 0 -50px -3px -15px;
-}
-.block2{
-    margin: 0 0 0 26px;
+    margin: 0 -70px 0px 0px;
 }
 .blocklatintext{
-    padding-bottom: 98px;
+    padding-bottom: 113px;
+    margin-top: 56px;
     height: auto;
     background-color: #F3F4F2;
     display: block;
-    margin-top: 69px;
 }
 .latintext{
     padding: 26px 0 0 15px;
@@ -773,8 +808,7 @@ a.buttonerror404:active { background: #b3ff00; }
     line-height: 18px;
 }
 .h2latintext{
-    padding-left: 15px;
-    padding-top: 60px;
+    padding-top: 66px;
     color: #9EA1A7;
     font-size: 32px;
     line-height: 32px;
@@ -799,8 +833,8 @@ a.buttonerror404:active { background: #b3ff00; }
     color: white;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 47px;
-    margin-left: -40px;
+    padding-top: 64px;
+    margin-left: -64px;
     justify-content: center;
 }
 .listfootertext{
@@ -883,23 +917,23 @@ a.buttonerror404:active { background: #b3ff00; }
 #menu__toggle {
     opacity: 0;
   }
-  
-  #menu__toggle:checked ~ .menu__btn > span {
-    transform: rotate(45deg);
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(405deg);
+    transition-duration: 1.25s;
   }
-  #menu__toggle:checked ~ .menu__btn > span::before {
+#menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
   }
-  #menu__toggle:checked ~ .menu__btn > span::after {
+#menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
   }
-  #menu__toggle:checked ~ .menu__box {
+#menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
   }
-  .menu__btn {
+.menu__btn {
     position: fixed;
     margin: 37px 0 0 -5%;
   
@@ -910,9 +944,9 @@ a.buttonerror404:active { background: #b3ff00; }
     z-index: 1;
   }
   
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -920,16 +954,16 @@ a.buttonerror404:active { background: #b3ff00; }
     background-color: #ffffff;
     transition-duration: .25s;
   }
-  .menu__btn > span::before {
+.menu__btn > span::before {
     content: '';
     top: -6px;
   }
-  .menu__btn > span::after {
+.menu__btn > span::after {
     content: '';
     top: 6px;
   }
   
-  .menu__box {
+.menu__box {
     display: block;
     position: fixed;
     visibility: hidden;
@@ -944,19 +978,16 @@ a.buttonerror404:active { background: #b3ff00; }
     transition-duration: .25s;
   }
   
-  .conteiner_menu__item {
+.conteiner_menu__item {
     display: flex;
     padding: 12px 24px;
     color: #9EA1A7;
     font-style: normal;
     font-weight: bold;
     font-size: 44px;
-  
-    
-  
     transition-duration: .25s;
   }
-  .menu_list_information{
+.menu_list_information{
     color: #FFFFFF;
     font-style: normal;
     font-weight: normal;
@@ -965,29 +996,29 @@ a.buttonerror404:active { background: #b3ff00; }
     list-style-type: none;
     padding-left: 0px;
   }
-  .menu__item:hover {
+.menu__item:hover {
     background-color: #21232E;
     ;
   }
-  .catalog__header{
+.catalog__header{
       padding-left: 227px;
   }
-  .prodyct_item{
+.prodyct_item{
     padding-top: 125px;
     padding-left: 81px;
   }
-  .catalog_header_text{
+.catalog_header_text{
       color: white;
       align-items: center;
-      
+      transition: 0.2s;
   }
-  .error404{
+.error404{
       display: flex;
       margin: auto;
       margin-top: 124px;
       margin-bottom: 45px;
   }
-  .error404text{
+.error404text{
     display: flex;
     margin: auto;
     margin-bottom: 32px;
@@ -996,7 +1027,7 @@ a.buttonerror404:active { background: #b3ff00; }
     text-align: center;
   }
 .footertextdecoration{
-    color: #e5e6e7;
+    color: #fff;
     transition: 0.2s;
 }
 .footertextdecoration:hover{

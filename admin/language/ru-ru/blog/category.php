@@ -26,6 +26,7 @@ $_['entry_meta_title'] 	     = 'Мета-тег Title';
 $_['entry_meta_h1'] 	     = 'HTML-тег H1';
 $_['entry_meta_keyword'] 	 = 'Мета-тег Keywords';
 $_['entry_meta_description'] = 'Мета-тег Description';
+$_['upentry_meta_description'] = 'up-Мета-тег Description';
 $_['entry_keyword']          = 'SEO URL';
 $_['entry_parent']           = 'Родительская категория';
 $_['entry_store']            = 'Магазины';

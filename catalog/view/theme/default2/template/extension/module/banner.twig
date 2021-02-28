@@ -1,14 +1,18 @@
-<div class="swiper-viewport">
-  <div id="banner{{ module }}" class="swiper-container">
-    <div class="swiper-wrapper">{% for banner in banners %}
-      <div class="swiper-slide">{% if banner.link %}<a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>{% else %}<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />{% endif %}</div>
-      {% endfor %}</div>
-  </div>
+<div class="pconteiner">{% for banner in banners %}
+  <div class="upblock1">{% if banner.link %}
+    <div class="flexposition">
+      <div class="block1">
+        <p class="greencube">-5%{{ banner.description }}</p>
+        <p class="blackcube">Черная пятница!{{ banner.description }}</p>
+        <p class="block1text1">MKW-H{{ banner.name }}</p>
+        <p class="block1text2">{{ banner.title }}</p>
+        <p class="block2text3">10 321 ₽{{ banner.price }}</p>
+        <a href="{{ banner.link }}" class="button3">купить</a>
+        <a href="{{ banner.link }}" class="button4">купить</a>
+      </div>
+      <div class="blockimg1">
+          <img src="{{ banner.image }}" alt="" class="blockimg1pic">
+      </div>
+    </div>{% endif %}
+  </div>{% endfor %}
 </div>
-<script type="text/javascript"><!--
-$('#banner{{ module }}').swiper({
-	effect: 'fade',
-	autoplay: 2500,
-    autoplayDisableOnInteraction: false
-});
---></script> 

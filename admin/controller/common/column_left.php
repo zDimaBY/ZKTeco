@@ -4,6 +4,17 @@
 
 class ControllerCommonColumnLeft extends Controller {
 	public function index() {
+
+		if (isset($this->request->post['upconfig_meta_description'])) {
+			$data['upconfig_meta_description'] = $this->request->post['upconfig_meta_description'];
+		} else {
+			$data['upconfig_meta_description'] = $this->config->get('upconfig_meta_description');
+		}
+		if (isset($this->request->post['config_meta_description'])) {
+			$data['config_meta_description'] = $this->request->post['config_meta_description'];
+		} else {
+			$data['config_meta_description'] = $this->config->get('config_meta_description');
+		}
 		if (isset($this->request->get['user_token']) && isset($this->session->data['user_token']) && ($this->request->get['user_token'] == $this->session->data['user_token'])) {
 			$this->load->language('common/column_left');
 

@@ -1,14 +1,31 @@
 <div class="footer">
     <div class="blockfooter">
         <div class="flexblock">
-            <img src="./catalog/view/theme/default2/img/Logo.svg" alt="default2" class="footer__logo-pic1">
+        {% if logo %}
+            {% if home == og_url %}
+              <img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="footer__logo-pic1" />
+            {% else %}
+              <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="footer__logo-pic1" /></a>
+            {% endif %}
+          {% else %}
+            <h1><a href="{{ home }}">{{ name }}</a></h1>
+          {% endif %}
             <div class="footorblock1 footorblockadaptation">
+            {% if logo %}
+            {% if home == og_url %}
+              <img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="footer__logo-pic" />
+            {% else %}
+              <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="footer__logo-pic" /></a>
+            {% endif %}
+          {% else %}
+            <h1><a href="{{ home }}">{{ name }}</a></h1>
+          {% endif %}
                 <img src="./catalog/view/theme/default2/img/Logo.svg" alt="default2" class="footer__logo-pic">
                 <div class="block1flex">
                 <ul class="listfootertext">
-                <li class="blockfootertext" style="list-style-type:none"><p class="footertext">Москва, м. Дмитровская,<br>ул. Новодмитровская 2, корп. 1,<br>БЦ Савеловский Сити</p></li>
-                <li class="blockfootertext" style="list-style-type:none"><p class="footertext">8(495)741-90-06</p></li>
-                <li class="blockfootertext" style="list-style-type:none"><p class="footertext">Режим работы:<br>ПН-ПТ: 9:00 до 18:00</p></li>
+                <li class="blockfootertext" style="list-style-type:none"><p class="footertext">{{ address }}</p></li>
+                <li class="blockfootertext" style="list-style-type:none"><p class="footertext">{{ telephone }}</p></li>
+                <li class="blockfootertext" style="list-style-type:none"><p class="footertext">{{ open }}</p></li>
                 </ul>
                     <div class="socialcommynity">
                         <img class="bxl-facebook" src="./catalog/view/theme/default2/img/footer/bxl-facebook.svg.svg" alt="">
@@ -18,33 +35,39 @@
             </div>
             <div class="footorblock2 footorblockadaptation">
                 <ul>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="katalog footertextdecoration">Каталог</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="project footertextdecoration">Проекты</a></li>
+                <li style="list-style-type:none">{% for breadcrumb in breadcrumbs %}<a href="{{ breadcrumb.href }}" class="katalog footertextdecoration">{{ breadcrumb.text }}</a>{% endfor %}</li>
+                <li style="list-style-type:none"><a href="http://192.168.2.110/index.php?route=information/information&information_id=7" class="project footertextdecoration">Проекты</a></li>
                 <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="pricelist footertextdecoration">Прайс-лист</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="support footertextdecoration">Поддержка</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="contacts footertextdecoration">Контакты</a></li>
+                <li style="list-style-type:none"><a href="http://192.168.2.110/index.php?route=information/information&information_id=6" class="support footertextdecoration">Поддержка</a></li>
+                <li style="list-style-type:none"><a href="{{ contact }}" class="contacts footertextdecoration">{{ text_contact }}</a></li>
                 </ul>
             </div>
             <div class="footorblock3 footorblockadaptation">
-                <ul>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="about footertextdecoration">О ZKTeco</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="payment footertextdecoration">Доставка и оплата</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="pricelist footertextdecoration">Прайс-лист</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="download footertextdecoration">Скачать</a></li>
+                <ul>{% for information in informations %}
+                <li style="list-style-type:none"><a href="{{ information.href }}" class="about footertextdecoration">{{ information.title }}</a></li>{% endfor %}
                 </ul>
             </div>
             <div class="footorblock4 footorblockadaptation">
                 <ul>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="trackind footertextdecoration">Учет рабочего времени</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="smatlock footertextdecoration">Умный замок</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="controlsestem footertextdecoration">Системы контроля доступа (СКУД)</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="passagecontrol footertextdecoration">Системы контроля прохода</a></li>
+                {% if categories %}
+                    {% for category in categories %}
+                        {% if category.children %}
+                            <li style="list-style-type:none"><a class="trackind footertextdecoration" href="{{ category.href }}">{{ category.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
                 </ul>
             </div>
             <div class="footorblock5 footorblockadaptation">
                 <ul>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="plugin footertextdecoration">Встраиваемые модули</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="cctv footertextdecoration">Видеонаблюдение</a></li>
+                {% if categories %}
+                    {% for category in categories %}
+                        {% if category.children %}
+                            {% else %}
+                            <li style="list-style-type:none"><a class="trackind footertextdecoration" href="{{ category.href }}">{{ category.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             </ul>
             </div>
         </div>

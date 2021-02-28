@@ -3,7 +3,7 @@
 // *	@license	GNU General Public License version 3; see LICENSE.txt
 
 // Heading
-$_['heading_title']    = 'Рекомендуемые';
+$_['heading_title']    = 'Популярная продукция';
 
 // Text
 $_['text_module']      = 'Модули';

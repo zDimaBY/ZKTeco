@@ -7,6 +7,7 @@ class ControllerExtensionFeedGoogleBase extends Controller {
 			$output .= '  <channel>';
 			$output .= '  <title>' . $this->config->get('config_name') . '</title>';
 			$output .= '  <description>' . $this->config->get('config_meta_description') . '</description>';
+			$output .= '  <description>' . $this->config->get('upconfig_meta_description') . '</description>';
 			$output .= '  <link>' . $this->config->get('config_url') . '</link>';
 
 			$this->load->model('extension/feed/google_base');

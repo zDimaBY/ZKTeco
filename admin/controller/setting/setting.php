@@ -170,7 +170,11 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['config_meta_title'] = $this->config->get('config_meta_title');
 		}
-
+		if (isset($this->request->post['upconfig_meta_description'])) {
+			$data['upconfig_meta_description'] = $this->request->post['upconfig_meta_description'];
+		} else {
+			$data['upconfig_meta_description'] = $this->config->get('upconfig_meta_description');
+		}
 		if (isset($this->request->post['config_meta_description'])) {
 			$data['config_meta_description'] = $this->request->post['config_meta_description'];
 		} else {
@@ -254,6 +258,11 @@ class ControllerSettingSetting extends Controller {
 			$data['config_telephone'] = $this->request->post['config_telephone'];
 		} else {
 			$data['config_telephone'] = $this->config->get('config_telephone');
+		}
+		if (isset($this->request->post['fconfig_telephone'])) {
+			$data['fconfig_telephone'] = $this->request->post['fconfig_telephone'];
+		} else {
+			$data['fconfig_telephone'] = $this->config->get('fconfig_telephone');
 		}
 		
 		if (isset($this->request->post['config_fax'])) {

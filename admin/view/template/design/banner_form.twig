@@ -72,11 +72,14 @@
                   {% if banner_images[language.language_id] %}
                   {% for banner_image in banner_images[language.language_id] %}
                   <tr id="image-row{{ image_row }}">
-                    <td class="text-left"><input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][title]" value="{{ banner_image.title }}" placeholder="{{ entry_title }}" class="form-control" />
+                    <td class="text-left">Скидка ⬇<input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][discount]" value="{{ banner_image.discount }}" placeholder="{{ entry_title }}" class="form-control" />
+                    Название ⬇<input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][name]" value="{{ banner_image.name }}" placeholder="{{ entry_title }}" class="form-control" />
+                    Цена ⬇<input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][price]" value="{{ banner_image.price }}" placeholder="{{ entry_title }}" class="form-control" />
                       {% if error_banner_image[language.language_id][image_row] %}
                       <div class="text-danger">{{ error_banner_image[language.language_id][image_row] }}</div>
                       {% endif %}</td>
-                    <td class="text-left" style="width: 30%;"><input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][link]" value="{{ banner_image.link }}" placeholder="{{ entry_link }}" class="form-control" /></td>
+                    <td class="text-left" style="width: 30%;">Ссылка ⬇<input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][link]" value="{{ banner_image.link }}" placeholder="{{ entry_link }}" class="form-control" />
+                    Описание ⬇<input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][title]" value="{{ banner_image.title }}" placeholder="{{ entry_title }}" class="form-control" /></td>
                     <td class="text-center"><a href="" id="thumb-image{{ image_row }}" data-toggle="image" class="img-thumbnail"><img src="{{ banner_image.thumb }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a>
                       <input type="hidden" name="banner_image[{{ language.language_id }}][{{ image_row }}][image]" value="{{ banner_image.image }}" id="input-image{{ image_row }}" /></td>
                     <td class="text-right" style="width: 10%;"><input type="text" name="banner_image[{{ language.language_id }}][{{ image_row }}][sort_order]" value="{{ banner_image.sort_order }}" placeholder="{{ entry_sort_order }}" class="form-control" /></td>
@@ -105,8 +108,9 @@ var image_row = {{ image_row }};
 
 function addImage(language_id) {
 	html  = '<tr id="image-row' + image_row + '">';
-    html += '  <td class="text-left"><input type="text" name="banner_image[' + language_id + '][' + image_row + '][title]" value="" placeholder="{{ entry_title }}" class="form-control" /></td>';	
-	html += '  <td class="text-left" style="width: 30%;"><input type="text" name="banner_image[' + language_id + '][' + image_row + '][link]" value="" placeholder="{{ entry_link }}" class="form-control" /></td>';	
+  html += '  <td class="text-left">Скидка ⬇<input type="text" name="banner_image[' + language_id + '][' + image_row + '][title]" value="" placeholder="{{ entry_title }}" class="form-control" />'
+	html += '  Название ⬇<input type="text" name="banner_image[' + language_id + '][' + image_row + '][link]" value="" placeholder="{{ entry_link }}" class="form-control" />'
+  html += '  Название ⬇<input type="text" name="banner_image[' + language_id + '][' + image_row + '][link]" value="" placeholder="{{ entry_link }}" class="form-control" /></td>';
 	html += '  <td class="text-center"><a href="" id="thumb-image' + image_row + '" data-toggle="image" class="img-thumbnail"><img src="{{ placeholder }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a><input type="hidden" name="banner_image[' + language_id + '][' + image_row + '][image]" value="" id="input-image' + image_row + '" /></td>';
 	html += '  <td class="text-right" style="width: 10%;"><input type="text" name="banner_image[' + language_id + '][' + image_row + '][sort_order]" value="" placeholder="{{ entry_sort_order }}" class="form-control" /></td>';
 	html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row  + ', .tooltip\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';

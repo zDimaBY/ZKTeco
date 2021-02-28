@@ -36,6 +36,7 @@ $_['entry_firstname']       = 'Имя';
 $_['entry_lastname']        = 'Фамилия';
 $_['entry_email']           = 'E-Mail';
 $_['entry_telephone']       = 'Телефон';
+$_['fentry_telephone']       = 'Footer телефон';
 $_['entry_fax']             = 'Факс';
 $_['entry_newsletter']      = 'Рассылка';
 $_['entry_status']          = 'Статус';

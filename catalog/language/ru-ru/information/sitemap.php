@@ -3,7 +3,7 @@
 // *	@license	GNU General Public License version 3; see LICENSE.txt
 
 // Heading
-$_['heading_title']    = 'Карта сайта';
+$_['heading_title']    = 'Каталог';
 
 // Text
 $_['text_special']     = 'Акции';
@@ -17,4 +17,4 @@ $_['text_cart']        = 'Корзина покупок';
 $_['text_checkout']    = 'Оформление заказа';
 $_['text_search']      = 'Поиск';
 $_['text_information'] = 'Информация';
-$_['text_contact']     = 'Связаться с нами';
+$_['text_contact']     = 'Контакты';

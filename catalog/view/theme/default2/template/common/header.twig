@@ -65,27 +65,22 @@
                     <li class="conteiner_menu__item">
                         <div class="information">
                             <h3 class="title">Меню</h3>
-                            <ul class="menu_list_information">
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">О ZKTeco</a></li>
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">Доставка и оплата</a></li>
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">Прайс-лист</a></li>
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">Скачать</a></li>
+                            <ul class="menu_list_information">{% for information in informations %}
+                                <li style="list-style-type:none"><a href="{{ information.href }}" class="about footertextdecoration">{{ information.title }}</a></li>{% endfor %}
                             </ul>
                         </div>
                         <div class="catalog__header">
                             <h3 class="title">Каталог</h3>
                             <ul class="menu_list_information">
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">Учет рабочего времени</a></li>
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">Умный замок</a></li>
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">Системы контроля доступа (СКУД)</a></li>
-                                <li class="catalog_header_list_text"><a class="catalog_header_text" href="!#">Системы контроля прохода</a></li>
-        
-                            </ul>
-                        </div>
-                        <div class="prodyct_item">
-                        <ul class="menu_list_information">
-                            <li class="catalog_header_list_text"><a class="catalog_header_text" href="#">Встраиваемые модули</a></li>
-                            <li class="catalog_header_list_text"><a class="catalog_header_text" href="#">Видеонаблюдение</a></li>
+                            {% if categories %}
+                                {% for category in categories %}
+                                    {% if category.children %}
+                                        <li class="catalog_header_list_text"><a class="catalog_header_text" href="{{ category.href }}">{{ category.name }}</a></li>
+                                        {% else %}
+                                        <li class="catalog_header_list_text"><a class="catalog_header_text" href="{{ category.href }}">{{ category.name }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endif %}
                         </ul>
                         </div>
                     </li>
@@ -108,16 +103,16 @@
                     <nav class="header__nav">
                         <ul class="header__list">
                          <li class="header__item">
-                                <a href="{{ category.href }}" class="see-all header__link">Каталог</a>
+                                <a href="{{ sitemap }}" class="see-all header__link">{{ text_sitemap }}</a>
                             </li>
                             <li class="header__item">
-                                <a href="./404.html" class="header__link">Проекты</a>
+                                <a href="http://192.168.2.110/index.php?route=information/information&information_id=7" class="header__link">Проекты</a>
                             </li>
                             <li class="header__item">
-                                <a href="./404.html" class="header__link">Поддержка</a>
+                                <a href="http://192.168.2.110/index.php?route=information/information&information_id=8" class="header__link">Поддержка</a>
                             </li>
                             <li class="header__item">
-                                <a href="./404.html" class="header__link">Контакты</a>
+                                <a href="{{ contact }}" class="header__link">{{ text_contact }}</a>
                             </li>
                         </ul>
                     </nav>

@@ -45,6 +45,7 @@ class ControllerBlogSetting extends Controller {
 		$data['entry_html_h1'] = $this->language->get('entry_html_h1');
 		$data['entry_meta_title'] = $this->language->get('entry_meta_title');
 		$data['entry_meta_description'] = $this->language->get('entry_meta_description');
+		$data['upentry_meta_description'] = $this->language->get('upentry_meta_description');
 		$data['entry_meta_keyword'] = $this->language->get('entry_meta_keyword');
 
 		$data['help_comment'] = $this->language->get('help_comment');
@@ -239,7 +240,11 @@ class ControllerBlogSetting extends Controller {
 		} else {
 			$data['configblog_meta_title'] = $this->config->get('configblog_meta_title');
 		}
-
+		if (isset($this->request->post['upconfigblog_meta_description'])) {
+			$data['upconfigblog_meta_description'] = $this->request->post['upconfigblog_meta_description'];
+		} else {
+			$data['upconfigblog_meta_description'] = $this->config->get('upconfigblog_meta_description');
+		}
 		if (isset($this->request->post['configblog_meta_description'])) {
 			$data['configblog_meta_description'] = $this->request->post['configblog_meta_description'];
 		} else {
