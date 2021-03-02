@@ -4878,3 +4878,21 @@
 2021-02-28 15:07:40 - PHP Notice:  Undefined index: price in /var/www/opencart/admin/model/design/banner.php on line 88
 2021-02-28 15:07:40 - PHP Notice:  Undefined index: price in /var/www/opencart/admin/model/design/banner.php on line 88
 2021-02-28 18:00:26 - PHP Notice:  Undefined index: path in /var/www/opencart/catalog/controller/extension/module/featured_product.php on line 28
+2021-03-01 12:05:06 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:05:06 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:05:06 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:05:06 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:05:58 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:05:58 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:05:58 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:05:58 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:09:49 - PHP Warning:  implode(): Invalid arguments passed in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:09:49 - PHP Warning:  implode(): Invalid arguments passed in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:10:07 - PHP Warning:  implode(): Invalid arguments passed in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:10:07 - PHP Warning:  implode(): Invalid arguments passed in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 78
+2021-03-01 12:14:23 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 70
+2021-03-01 12:14:23 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 70
+2021-03-01 12:14:23 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 70
+2021-03-01 12:14:23 - PHP Warning:  A non-numeric value encountered in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 70
+2021-03-01 12:17:15 - PHP Warning:  implode() expects at most 2 parameters, 3 given in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 70
+2021-03-01 12:17:15 - PHP Warning:  implode() expects at most 2 parameters, 3 given in /var/www/opencart/catalog/controller/extension/module/featureddown.php on line 70

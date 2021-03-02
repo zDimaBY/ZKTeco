@@ -2,8 +2,8 @@
   <div class="upblock1">
     <div class="flexposition">
       <div class="block1">
-        <p class="greencube">-5%</p>
-        <p class="blackcube">Черная пятница!</p>
+        <p class="greencube">-{{ product.sale }}%</p>
+        <p class="blackcube">Черная пятница!{% for product_special in product_specials %}<input type="text" name="product_special[{{ special_row }}][priority]" value="{{ product_special.priority }}" placeholder="{{ entry_priority }}" class="form-control" />{% endfor %}</p>
         <p class="block1text1">{{ product.name }}</p>
         <p class="block1text2">{{ product.description }}</p>
         <p class="block2text3">{{ product.price }}</p>

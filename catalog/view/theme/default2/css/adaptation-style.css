@@ -12,8 +12,16 @@
   .footorblockadaptation{
     padding-left: 50px;
   }
+  a.button1{
+    margin-top: 4.5%;
+    margin-left: 4.85%;
+  }
 }
 @media (max-width: 1250px){
+  a.button1{
+    margin-top: 3.3%;
+    margin-left: 4.8%;
+  }
   .nomber{
     display: none;
   }
@@ -40,6 +48,10 @@
   }
 }
 @media (max-width: 1050px){
+  a.button1{
+    margin-top: 3%;
+    margin-left: 4.6%;
+  }
   .footorblock1{
     display: flex;
     margin-left: 100px;
@@ -78,7 +90,7 @@
   }
   .textdownfooter{
     padding-top: 0;
-    margin-top: -10px;
+    margin-top: 5px;
     left: 15px;
   }
   .footerpayment{
@@ -100,6 +112,10 @@
   }
 }
 @media (max-width: 880px){
+  a.button1{
+    margin-top: 2.8%;
+    margin-left: 4.5%;
+  }
   .header__item{
     margin-right: 10px;
   }
@@ -117,6 +133,9 @@
   }
 }
 @media (max-width: 800px){
+  a.button1{
+    margin-left: 4.4%;
+  }
   .headerList{
     display: none;
   }
@@ -134,6 +153,10 @@
   }
 }
 @media (max-width: 769px){
+  a.button1{
+    margin-top: 2.8%;
+    margin-left: 4.5%;
+  }
   .flexblock{
     display:block;
   }
@@ -152,6 +175,10 @@
   }
 }
 @media (max-width: 650px){
+  a.button1{
+    margin-top: 2.8%;
+    margin-left: 4.4%;
+  }
   .Search{
     display: none;
   }
@@ -170,8 +197,18 @@
   .header__logo-pic{
     margin-left: 150px;
   }
+  .itemiconScale{
+    margin: 0 0 -13px 83%;
+  }
 }
 @media (max-width: 485px){
+  a.button1{
+    margin-top: 2.8%;
+    margin-left: 4%;
+  }
+  .menu__btn{
+    margin: 37px 0 0 -9%;
+  }
   .hiuser{
     display: none;
   }
@@ -180,6 +217,9 @@
   }
   .iconScale{
     margin: 0 0 -34px 66%;
+  }
+  .itemiconScale{
+    margin: 0 0 -13px 70%;
   }
   .iconCart{
     margin: 0 0 -34px 84%;

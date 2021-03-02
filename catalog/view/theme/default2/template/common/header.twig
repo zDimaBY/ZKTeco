@@ -90,9 +90,9 @@
                     <a href="./" class="header__logo-link">
                         {% if logo %}
             {% if home == og_url %}
-              <img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" />
+              <img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="header__logo-pic" />
             {% else %}
-              <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>
+              <a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="header__logo-pic" /></a>
             {% endif %}
           {% else %}
             <h1><a href="{{ home }}">{{ name }}</a></h1>

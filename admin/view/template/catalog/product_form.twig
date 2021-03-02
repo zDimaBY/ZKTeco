@@ -964,7 +964,7 @@
                   
                   {% set special_row = 0 %}
                   {% for product_special in product_specials %}
-                  <tr id="special-row{{ special_row }}">
+                 
                     <td class="text-left"><select name="product_special[{{ special_row }}][customer_group_id]" class="form-control">
                         
 
@@ -999,7 +999,7 @@
                         <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
                         </span></div></td>
                     <td class="text-left"><button type="button" onclick="$('#special-row{{ special_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
-                  </tr>
+                
                   {% set special_row = special_row + 1 %}
                   {% endfor %}
                     </tbody>
