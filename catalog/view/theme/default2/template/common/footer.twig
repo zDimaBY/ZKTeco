@@ -28,17 +28,17 @@
                 <li class="blockfootertext" style="list-style-type:none"><p class="footertext">{{ open }}</p></li>
                 </ul>
                     <div class="socialcommynity">
-                        <img class="bxl-facebook" src="./catalog/view/theme/default2/img/footer/bxl-facebook.svg.svg" alt="">
-                        <img src="./catalog/view/theme/default2/img/footer/bxl-instagram.svg.svg" alt="">
+                        <img class="bxl-facebook" src="./catalog/view/theme/default2/img/footer/bxl-facebook.svg.svg" alt="facebook">
+                        <img src="./catalog/view/theme/default2/img/footer/bxl-instagram.svg.svg" alt="instagram">
                     </div>
                 </div>
             </div>
             <div class="footorblock2 footorblockadaptation">
                 <ul>
                 <li style="list-style-type:none">{% for breadcrumb in breadcrumbs %}<a href="{{ breadcrumb.href }}" class="katalog footertextdecoration">{{ breadcrumb.text }}</a>{% endfor %}</li>
-                <li style="list-style-type:none"><a href="http://192.168.2.110/index.php?route=information/information&information_id=7" class="project footertextdecoration">Проекты</a></li>
-                <li style="list-style-type:none"><a href="./catalog/view/theme/default2/php/i.php" class="pricelist footertextdecoration">Прайс-лист</a></li>
-                <li style="list-style-type:none"><a href="http://192.168.2.110/index.php?route=information/information&information_id=6" class="support footertextdecoration">Поддержка</a></li>
+                <li style="list-style-type:none"><a href="{{ special }}" class="project footertextdecoration">{{ text_special }}</a></li>
+                <li style="list-style-type:none"><a href="{{ affiliate }}" class="pricelist footertextdecoration">{{ text_affiliate }}</a></li>
+                <li style="list-style-type:none"><a href="{{ special }}" class="support footertextdecoration">{{ text_voucher }}</a></li>
                 <li style="list-style-type:none"><a href="{{ contact }}" class="contacts footertextdecoration">{{ text_contact }}</a></li>
                 </ul>
             </div>
